@@ -5,10 +5,27 @@ Spyder Editor
 This is a temporary script file.
 """
 
-# punto 10
+# punto 12
 
-b = float(input("ingrese el primer numero: "))
-d = float(input("ingrese el segundo numero "))
+a = float(input("ingrese el valor de el primer numero: "))
+b = float(input("ingrese el valor del segundo numero: "))
+c = float(input("ingrese el valor del tercer numero: "))
 
-print("el cuadrado del primer numero es: " + str(b**2))
-print("la raiz cuadrada del segundo numero es: " + str(d**0.5))
+d = b**2 -4*a*c
+e = 2*a 
+if d > 0:
+    print("x1=", (-b + d**0.5)/e)
+    print("x2=", (-b - d**0.5)/e)
+    
+elif d == 0:
+        print("x1=x2=", -b/e)
+        
+elif d < 0:
+         print("no exixte solucion de la ecuacion cuadratica en el dominio de los reales")
+        
+    
+
+        
+    
+    
+    
