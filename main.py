@@ -5,10 +5,10 @@ Spyder Editor
 This is a temporary script file.
 """
 
-# punto 5
+# punto 10
 
-a = float(input("ingrese el valor del primer numero: "))
-c = float(input("ingrese el valor del segundo numero: "))
+b = float(input("ingrese el primer numero: "))
+d = float(input("ingrese el segundo numero "))
 
-print ("el producto de los dos numeros es: " + str(a+c))
-print ("el doble del segundo numero es: " + str(a*2))
+print("el cuadrado del primer numero es: " + str(b**2))
+print("la raiz cuadrada del segundo numero es: " + str(d**0.5))
