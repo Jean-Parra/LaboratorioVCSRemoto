@@ -5,38 +5,11 @@ Spyder Editor
 This is a temporary script file.
 """
 
-# empresa de transporte 
+# punto 5
 
-PesoAcumulado = 0
-D = float(input("ingrese la distancia: "))
-L = float(input("ingrese capacidad limite de ese avion: "))
-PP = float(input("ingrese el precio por peso: "))
-PK = float(input("ingrese el precio por km: "))
-PM = float(input("ingrese precio por milla: "))
-VN = 1
-VI = 2
-while PesoAcumulado <= L *0.95 :
-    P = float(input("ingrese el peso: "))
-    if P > 10:
-        PesoAcumulado = PesoAcumulado + P
-        if PesoAcumulado <= L:
-            if VN == 1:
-                ValorDistancia = PK * D
-                ValorPeso = PP * P
-                ValorTotal = ValorDistancia + ValorPeso
-                print("el valor total es: " + str (ValorDistancia + ValorPeso))
-                if P > 100 :
-                    print("el valor total es: " + str (ValorTotal * 0.85))
-            elif VI == 2:
-                ValorDistancia = PM * D
-                ValorPeso = PP * P
-                print("el valor total es: " + str (ValorDistancia + ValorPeso))
-                if P >400 and D >8000:
-                    print("el valor total es: " + str (ValorTotal * 0.90))
-        else:
-            print("el paquete supera el limite")
-            PesoAcumulado = PesoAcumulado - P
-    else: 
-        print("peso no aceptable")
-    if PesoAcumulado >= L * 0.95 and L <= 355000 :
-        print("el peso del avion es: " + str(PesoAcumulado))
+a = int(input("introduzca el primer numero: "))
+c = int(input("introduzca el segundo numero: "))
+
+print("el producto del primer numero y el segundo es: " + str(a*c))
+print("el doble del primer numero es: " + str(a*2))
+
